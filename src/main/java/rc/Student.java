@@ -35,4 +35,25 @@ public class Student {
         input = JOptionPane.showInputDialog("Enter your exam mark.");
         int exam = Integer.parseInt(input);
     }
+    
+    //The method for retrieving the data from the Learner class
+    public String getLearnerInput(String fName, String module, int assignment, int testM, int exam){
+        //The object for the Learner class
+        Learner learner = new Learner( fName, module, assignment, testM, exam);
+        //The string that will return the user input from the class
+        String learnerData = "\n" + learner.getfullName() + "\n"
+                               + "Subject: " + learner.getsubject() + "\n"
+                               + "Assignment Mark: " + learner.getassignmentMark() + "\n"
+                               + "Test Mark: " + learner.gettestMark() + "\n"
+                               + "Exam Mark: " + learner.getexamMark() + "\n";
+        return learnerData;
+    }
+    
+    //The method for displaying the final mark
+    public float displayFinalMark(String fName, String module, int assignment, int testM, int exam){
+        
+        Learner learner = new Learner( fName, module, assignment, testM, exam);
+        return learner.getfinalMark();
+        
+    }
 }
