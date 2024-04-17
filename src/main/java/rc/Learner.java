@@ -25,5 +25,51 @@ public class Learner {
         this.examMark = examMark;
     }
     
+    // The getter and setter methods for the constructors attributes
+    
+    // the getter and setter methods for the String fullName
+    public String getfullName(){
+        return fullName;
+    }
+    
+     public void setfullName(String fullName){
+        this.fullName = fullName;
+    }
+     
+    // the getter and setter methods for the String subject
+    public String getsubject(){
+        return subject;
+    }
+    
+     public void setsubject(String subject){
+        this.subject = subject;
+    }
+     
+    // the getter and setter methods for the int assignmentMark
+    public int getassignmentMark(){
+        return assignmentMark;
+    }
+    
+     public void setassignmentMark(int assignmentMark){
+        this.assignmentMark = assignmentMark;
+    }
+     
+    // the getter and setter methods for the int testMark
+    public int testMark(){
+        return testMark;
+    }
+    
+     public void testMark(int testMark){
+        this.testMark = testMark;
+    }
+     
+    // the getter and setter methods for the int examMark
+    public int examMark(){
+        return examMark;
+    }
+    
+     public void examMark(int examMark){
+        this.examMark = examMark;
+    }
     
 }
