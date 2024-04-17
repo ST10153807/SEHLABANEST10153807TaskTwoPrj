@@ -6,7 +6,7 @@ package rc;
 
 /**
  *
- * @author user
+ * @author ST10153807
  */
 public class Learner {
     //Attributes for the Learner class.
