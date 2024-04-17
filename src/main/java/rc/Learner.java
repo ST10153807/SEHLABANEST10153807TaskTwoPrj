@@ -55,21 +55,37 @@ public class Learner {
     }
      
     // the getter and setter methods for the int testMark
-    public int testMark(){
+    public int gettestMark(){
         return testMark;
     }
     
-     public void testMark(int testMark){
+     public void settestMark(int testMark){
         this.testMark = testMark;
     }
      
     // the getter and setter methods for the int examMark
-    public int examMark(){
+    public int getexamMark(){
         return examMark;
     }
     
-     public void examMark(int examMark){
+     public void setexamMark(int examMark){
         this.examMark = examMark;
     }
     
+    //The methods for calculating the final mark using the user input.
+    
+     // the getter and setter methods for the double finalMark
+    public float getfinalMark(){
+        return calcFinalMark(assignmentMark, testMark, examMark);
+    }
+    
+     public void setfinalMark(float finalMark){
+        
+    }
+     
+    //The method that calculates the final mark from the marks submitted by the user.
+     public float calcFinalMark(int assignmentMark, int testMark, int examMark){
+         return (assignmentMark + testMark + examMark) / 3.0f;
+     }
+     
 }
