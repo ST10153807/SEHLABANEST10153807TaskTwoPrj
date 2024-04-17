@@ -34,6 +34,17 @@ public class Student {
         //The exam mark variable
         input = JOptionPane.showInputDialog("Enter your exam mark.");
         int exam = Integer.parseInt(input);
+        
+        //A constructor for the Student class to be able to access the methods for getting and displaying the information
+        Student student = new Student();
+        String learnerData = student.getLearnerInput(fName, module, assignment, testM, exam);
+        float finalMark = student.displayFinalMark(fName, module, assignment, testM, exam);
+        
+        String message = "Learner info: " + learnerData + "\nFinal Mark: " + finalMark;
+        
+        //Displaying the student information with JOptionPane
+        JOptionPane.showMessageDialog(null, message);
+        
     }
     
     //The method for retrieving the data from the Learner class
